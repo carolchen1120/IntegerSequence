@@ -16,22 +16,24 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public int length(){
-    return (this.data.size());
+    return (this.data.length);
   }
 
-  // public boolean hasNext(){
-  //   return (this.current >= this.start && this.current <= this.end);
-  // }
-  //
-  // //@throws NoSuchElementException
-  // public int next(){
-  //   if (!this.hasNext()) {
-  //     throw new NoSuchElementException();
-  //   } else {
-  //     this.current++;
-  //     return this.current;
-  //   }
-  // }
+  public boolean hasNext(){
+    // return (this.current >= this.start && this.current <= this.end);
+    return true;
+  }
+
+  //@throws NoSuchElementException
+  public int next(){
+    // if (!this.hasNext()) {
+    //   throw new NoSuchElementException();
+    // } else {
+    //   this.current++;
+    //   return this.current;
+    // }
+    return 0;
+  }
 
 
 
