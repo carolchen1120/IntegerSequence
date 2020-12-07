@@ -11,7 +11,7 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public void reset(){
-    this.data = [];
+    this.data = new int[0];
     this.currentIndex = 0;
   }
 
