@@ -22,7 +22,7 @@ public class Range implements IntegerSequence{
   }
 
   public int length(){
-
+    return (this.end - this.start + 1);
   }
 
   public boolean hasNext(){
