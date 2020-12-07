@@ -33,7 +33,7 @@ public class Range implements IntegerSequence{
   //@throws NoSuchElementException
   public int next(){
     if (!this.hasNext()) {
-      throw NoSuchElementException;
+      throw NoSuchElementException();
     } else {
       this.current++;
       return this.current;
