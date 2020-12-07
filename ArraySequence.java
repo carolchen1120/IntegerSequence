@@ -1,4 +1,6 @@
-public class ArraySequence implements IntegerSequence {
+import java.util.NoSuchElementException;
+
+public class ArraySequence implements IntegerSequence{
   int currentIndex;
   int[] data;
 
@@ -17,19 +19,19 @@ public class ArraySequence implements IntegerSequence {
     return (this.data.size());
   }
 
-  public boolean hasNext(){
-    // return (this.current >= this.start && this.current <= this.end);
-  }
-
-  //@throws NoSuchElementException
-  public int next(){
-    // if (!this.hasNext()) {
-    //   throw new NoSuchElementException();
-    // } else {
-    //   this.current++;
-    //   return this.current;
-    // }
-  }
+  // public boolean hasNext(){
+  //   return (this.current >= this.start && this.current <= this.end);
+  // }
+  //
+  // //@throws NoSuchElementException
+  // public int next(){
+  //   if (!this.hasNext()) {
+  //     throw new NoSuchElementException();
+  //   } else {
+  //     this.current++;
+  //     return this.current;
+  //   }
+  // }
 
 
 
