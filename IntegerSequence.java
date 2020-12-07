@@ -41,3 +41,8 @@ public class Range implements IntegerSequence{
   }
 
 }
+
+
+public class ArraySequence implements IntegerSequence {
+  
+}
