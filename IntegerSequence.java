@@ -14,6 +14,7 @@ public class Range implements IntegerSequence{
   public Range(int start, int end){
     this.start = start;
     this.end = end;
+    this.current = start;
   }
 
   public void reset(){
@@ -26,7 +27,7 @@ public class Range implements IntegerSequence{
   }
 
   public boolean hasNext(){
-
+    return (this.current >= this.start && this.current <= this.end);
   }
 
   //@throws NoSuchElementException
