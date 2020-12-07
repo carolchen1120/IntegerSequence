@@ -34,6 +34,10 @@ public class ArraySequence implements IntegerSequence{
     }
   }
 
+  public ArraySequence(IntegerSequence otherseq){
+    this.data = otherseq;
+  }
+
 
 
 }
