@@ -7,7 +7,9 @@ public class ArraySequence implements IntegerSequence{
 
   /*Construct the sequence by copying values from the other array into the data array*/
   public ArraySequence(int[] other){
-    this.data = other;
+    for (int i = 0; i < other.length; i++) {
+      this.data[i] = other[i];
+    }
     this.currentIndex = 0;
   }
 
@@ -35,7 +37,9 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public ArraySequence(IntegerSequence otherseq){
-    this.data = otherseq;
+    for (int i = 0; i < otherseq.length(); i++) {
+      this.data[i] = otherseq.next();
+    }
   }
 
 
